@@ -7,7 +7,6 @@ module.exports = {
   // Точка входа
   entry: {
     main: "./index.js",
-    analytics: "./Analytics.js",
   },
 
   // Точка выхода сборки
@@ -32,7 +31,11 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpg|svg)/,
+        test: /\.(png|jpg|svg)$/,
+        use: ["file-loader"],
+      },
+      {
+        test: /\.(ttf|woff|woff2|eot)$/,
         use: ["file-loader"],
       },
     ],
