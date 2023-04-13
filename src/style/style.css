@@ -1,0 +1,17 @@
+body {
+  max-width: 100px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
+
+h1 {
+  text-align: center;
+}
+
+.logo {
+  background-image: url(../assets/webpack.png);
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
