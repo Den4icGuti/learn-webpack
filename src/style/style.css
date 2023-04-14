@@ -2,15 +2,28 @@
 
 body {
   font-family: "Dongle", sans-serif;
+
+  background: no-repeat;
 }
 
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: antiquewhite;
   padding: 0;
 }
 
-.title {
-  text-align: center;
+.form {
+  width: 500px;
+}
+
+ul {
+  list-style: none;
+}
+
+.list-group {
+  width: 200px;
+}
+
+.list__btn {
+  margin-left: 20px;
 }

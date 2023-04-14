@@ -8,16 +8,35 @@
   </head>
   <body>
     <div class="container">
-      <div class="rov">
-      <h2>Add todo</h2>
-      <form >
-      <label>
-        <span>Add new todo</span>
-        <input type="text" name="todo" />
-      </label>
-      <button type="submit" class="btn btn-primary">+ Add todo</button>
-      <button type="button" class="btn btn-success">Print</button>
-      </form>
+      <div class="row">
+        <h2>Todos</h2>
+        <form class="form-submit">
+          <div class="form-group form">
+            <label>
+              <span>Add new todo</span>
+              <hr />
+              <input type="text" class="form-control" name="todo" />
+            </label>
+
+            <button type="submit" class="btn btn-primary">+ Add todo</button>
+            <button type="submit" class="btn btn-success">Print</button>
+          </div>
+        </form>
       </div>
+      <div class="row">
+        <ul>
+          <li class="list-group-item list-group">
+            <input type="checkbox" />
+            <span>Milk</span>
+            <button type="button" class="btn btn-danger list__btn">X</button>
+          </li>
+          <li class="list-group-item list-group">
+            <input type="checkbox" />
+            <span>Beer</span>
+            <button type="button" class="btn btn-danger list__btn">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
