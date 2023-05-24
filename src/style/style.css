@@ -21,9 +21,29 @@ ul {
 }
 
 .list-group {
-  width: 200px;
+  width: 100%;
 }
 
 .list__btn {
-  margin-left: 20px;
+  display: block;
+  margin-left: auto;
+}
+
+.list-group__label {
+  position: absolute;
+  bottom: 10px;
+}
+
+.form {
+  padding-bottom: 20px;
+}
+
+.search-form {
+  padding-bottom: 20px;
+}
+
+.delete-modal {
+  background: rgb(56, 82, 131);
+  padding: 20px;
+  color: #fff;
 }

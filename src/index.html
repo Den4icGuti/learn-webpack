@@ -9,34 +9,32 @@
   <body>
     <div class="container">
       <div class="row">
-        <h2>Todos</h2>
-        <form class="form-submit">
+        <h2>Todo List</h2>
+        <form class="form-submit form">
           <div class="form-group form">
             <label>
               <span>Add new todo</span>
               <hr />
-              <input type="text" class="form-control" name="todo" />
+              <input type="text" class="form-control js-text" name="text" />
             </label>
 
             <button type="submit" class="btn btn-primary">+ Add todo</button>
-            <button type="submit" class="btn btn-success">Print</button>
+            <button type="button" class="btn btn-success js-print-btn">
+              Print
+            </button>
           </div>
+       
+      </div>
+       </form>
+        <form class="search-form js-search-form">
+          <label> Input to search todo
+            <input type="text">
+          </label>
         </form>
-      </div>
       <div class="row">
-        <ul>
-          <li class="list-group-item list-group">
-            <input type="checkbox" />
-            <span>Milk</span>
-            <button type="button" class="btn btn-danger list__btn">X</button>
-          </li>
-          <li class="list-group-item list-group">
-            <input type="checkbox" />
-            <span>Beer</span>
-            <button type="button" class="btn btn-danger list__btn">X</button>
-          </li>
-        </ul>
+        <ul class="js-list"></ul>
       </div>
+    
     </div>
   </body>
 </html>

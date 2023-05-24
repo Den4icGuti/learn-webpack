@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Denis Gutin <goos7412@gmail.com>",
@@ -21,9 +23,13 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.4",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.6.4",
+    "nanoid": "^4.0.2",
     "normalize.css": "^8.0.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "toastr": "^2.1.4"
   }
 }
